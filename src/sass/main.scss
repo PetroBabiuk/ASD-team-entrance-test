@@ -1,1 +1,10 @@
-// @import './example';
+//utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+//base
+@import './base/common';
+@import './base/container';
+//layout
+@import './layout/header';
+@import './layout/settings-window';
+@import './layout/footer';
