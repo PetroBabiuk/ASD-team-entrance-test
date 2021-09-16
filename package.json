@@ -1,0 +1,28 @@
+{
+  "name": "asd-team-entrance-test",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://PetroBabiuk.github.io/ASD-team-entrance-test",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /ASD-team-entrance-test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetroBabiuk/ASD-team-entrance-test.git"
+  },
+  "keywords": [],
+  "author": "Petro Babiuk <petro.babiuk2506@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PetroBabiuk/ASD-team-entrance-test/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  }
+}
