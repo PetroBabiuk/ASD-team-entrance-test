@@ -1,5 +1,8 @@
 .footer {
-  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 120px;
 }
 
@@ -14,6 +17,22 @@
 
   & .item + .item {
     margin-left: 24px;
+
+    &:last-child {
+      position: relative;
+      margin-left: 48px;
+
+      &::before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 1px;
+        height: 92px;
+        background-color: #110a09;
+      }
+    }
   }
 }
 
@@ -32,7 +51,24 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.mail {
+    position: relative;
     background-image: url(../images/icons/mail.png);
+
+    &::after {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: '39';
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: #f02912;
+      font-size: 14px;
+      color: #ffffff;
+    }
   }
 
   &.firefox {
@@ -56,8 +92,7 @@
     background-size: contain;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     transform: scale(1.2);
   }
 }
